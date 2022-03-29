@@ -1,0 +1,4 @@
+const story = { //story object
+
+
+}
