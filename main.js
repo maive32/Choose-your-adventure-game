@@ -1,5 +1,5 @@
 
 const story = { //story object
 
-
 }
+
