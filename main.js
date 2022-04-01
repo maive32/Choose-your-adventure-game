@@ -1,4 +1,5 @@
 
+
 const story = { //story object
         Start:{
             text: `<h2>Intro</h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quisque egestas diam in arcu cursus euismod quis viverra. Luctus venenatis lectus magna fringilla urna porttitor. Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum. Odio pellentesque diam volutpat commodo sed egestas egestas. Mattis enim ut tellus elementum sagittis vitae. Orci sagittis eu volutpat odio facilisis mauris sit amet massa. Lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis. Fringilla ut morbi tincidunt augue interdum velit euismod. Pretium fusce id velit ut tortor pretium. Proin nibh nisl condimentum id venenatis a condimentum. Justo donec enim diam vulputate ut pharetra sit. Vel quam elementum pulvinar etiam non quam lacus suspendisse. Nisi vitae suscipit tellus mauris a diam. Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. Adipiscing enim eu turpis egestas pretium aenean pharetra. Quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Dolor purus non enim praesent elementum facilisis leo vel. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique.`,
@@ -27,11 +28,8 @@ const story = { //story object
 
 var playerchoice = ['start'];  
 
-function pushchoice {
-if (document.button.selected) {
-    playerchoice.push(document.button.selected.text[i]);
-    console.log(playerchoice);
-}
+function choosingChoices() {
+
 }
 
 
