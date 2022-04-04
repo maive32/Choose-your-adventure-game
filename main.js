@@ -26,10 +26,15 @@ const story = { //story object
         },
 }
 
-var playerchoice = ['start'];  
+var playerChoice = ['start'];  // player choices stored here
+document.getElementById("choices").innerHTML = playerChoice; // 
 
-function choosingChoices() {
+function pushChoices() {
 
+    playerChoice.push(choices.selected);
+    document.getElementById("choices").innerHTML = playerChoice; 
+    console.log(playerChoice)
+    
 }
 
 
