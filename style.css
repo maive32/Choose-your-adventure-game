@@ -1,0 +1,17 @@
+
+   
+
+#start{
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    background-color: rgb(255, 255, 255);
+    margin: 0 0.5rem 0.5em 1em;
+    font-size: 125%;
+    margin-left: 0.5rem;
+
+}
+
+#start:hover{
+transition: 2s;
+color: aqua;
+}

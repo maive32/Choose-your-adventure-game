@@ -1,3 +1,7 @@
+/*Starting the game*/
+
+
+
 
 
 const story = { //story object
