@@ -1,34 +1,81 @@
-p {
-    text-align: center;
-    margin: auto;
-    font-size: 40px;
-}
 
-.wrap ul {
-    justify-content: space-between;
-    height: 3em; 
-    display: flex; 
-    list-style: none;
-    margin: 0; 
-    text-align: center; 
-    width: auto; 
-    padding-right: 40px;
-}
 
-li {
-    padding: 14px 16px; 
-    text-decoration: none; 
-    font-size: 17px; 
-    justify-content: space-between;
-    background-color: lightgray;
-    flex-direction: row; 
+* {
+	box-sizing: border-box;
 }
-
 body {
-    background-color: black;
-    color: white;
+	background: rgb(0, 0, 0);
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 21px;
+	height: 100vh;
 }
 
-h1 {
-    text-align: center;
+h1
+{
+	font-family: 'Poiret One', cursive;
+border-style: dashed;
+border-width: 2px;
+}
+  
+
+
+
+
+
+h2 {
+	font-size: 1.25rem;
+	padding-bottom: 0.25rem;
+	border-bottom: 3px groove rgba(255,255,255,.5);
+  
+}
+ 
+
+.sticky {
+	position: sticky;
+	top: 1rem;
+}
+
+.wrapper {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0.75rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.story {
+	width: 75%;
+	text-align: justify;
+}
+
+.breadcrumbs {
+	width: 20%;
+}
+
+.restart {
+	color:yellow;
+}
+
+#choiceList li,
+.restart {
+	transition: all ease-in 200ms;
+}
+
+#choiceList li:hover,
+.restart:hover {
+	color: rgb(0, 0, 0);
+	cursor: pointer;
+  background-color: #ffffff;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  flex-direction: row;
+}
+#text {
+  color:  rgb(255, 255, 255);
+  font-family: 'Special Elite', cursive;
 }

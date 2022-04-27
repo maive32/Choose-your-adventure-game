@@ -1,27 +1,54 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Choose your adventure game</title>
-        <link href="style.css" rel="stylesheet"/>
-    </head>
-    <body>
-        <script src="main.js"></script>
-        <div class="wrapper">
-        <section>
-            <h1>Choose your adventure game: wilted</h1>
-            <div id = "StoryArea">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa delectus repellendus perferendis eligendi error quam, voluptatibus hic maiores aspernatur eos distinctio deserunt magni expedita voluptatum quod suscipit molestias saepe. Illo!</p>
-            </div>
-        </section>
-        <section id = "choices" class = "wrap">
-            <ul>
-                <li>1stChoice</li>
-                <li>2ndChoice</li>
-                <li>3rdChoice</li>
-            </ul>
-        </section>
-        </div>
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My Interactive Story Demo</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+		<div class="wrapper">
+			<section class="story">
+
+				<h1>Chose your own Adventure game</h1>
+
+				<section id="text">
+
+					<p>Static, to be replaced. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores reiciendis, odit nam sapiente nihil dignissimos possimus provident nobis exercitationem odio aperiam neque quia. Voluptates quos hic laboriosam natus, quasi asperiores.</p>
+					
+				</section>
+				<section id="choices">
+					<h3>What happens next?</h3> 
+					<ol id="choiceList">
+						<li>Choice 1</li>
+						<li>Choice 2</li>
+						<li>Choice 3</li>
+					</ol>
+
+				</section>
+
+			</section>
+
+			<section class="breadcrumbs">
+
+				<section class="sticky">
+					<h4>Journal</h4>
+						<ol id="crumbList">
+							<li>Test</li>
+							<li>Crumbs</li>
+						</ol>
+				</section>
+	
+			</section>
+
+		</div>
+	
+
+    <script src="main.js"></script>
+		<script>
+			storyLoop('intro');
+		</script>
+  </body>
 </html>

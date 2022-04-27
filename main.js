@@ -1,6 +1,10 @@
-/*Starting the game*/
+let breadCrumbs = [],
+		itsNotOver = true,
+		storyElem = document.getElementById('text'),
+		choicesElem = document.getElementById('choiceList'),
+		crumbElem = document.getElementById('crumbList');
 
-const story = { //story object
+const myStory = { //story object
         Start:{
             text: `Waking up, you see the pasty boy. You've been retreating here for a while now from the outside world. Everything is white like you. Except for the black light bulb that shines above you, a laptop, tissues, a cat, and a sketchbook. You've been placed on this blanket with everything you need. What will you do?`,
             choice: [
@@ -67,11 +71,97 @@ const story = { //story object
             text: `You sob into the tissue, you've been feeling terrible lately. You see a bulbous cat meowing in front of you`, 
             choices: ['Pet the cat','pet'],
             choices: ['Talk with the cat', 'talk'],
+			choices: ['Ignore it and hopes it goes away','ignore'],
         }, 
+		pet: {
+			text: `You pet the cat, it's very fluffy. The cat is half red, and blue with a yellow belly. Sometimes you wonder if it ever became a real boy. He barfs up a key. You pick it up.`,
+			choices: ['Try to use it on the laptop','keyTolaptop'],
+			choices: ['Use the key on the cat','keyTocat'], 
+		},
+		talk: {
+			text: ``,
+			choices: ['',''],
+		},
+		keyTocat: {
+			text: `You did it, he turned into a real catboy! You two later marry, Pretty Boy and Jock attend your wedding.`,
+			choices: ['',''],
+		}, 
+		notebook: {
+			text: `You flip open the notebook and see your masterpieces, images of red hands and limbs are all over the page. Something specifically catches your eye, there is a photograph of your first duet on christmas, playing the violin with your sister on the piano. You tuck the photograph into your pockets.`,
+			choices: ['',''],
+		}
 }
 
-var storyChoices = [];
+function buildStory(){
+	let story = ``;
+	if (breadCrumbs.length < 1){
+		return false;
+	} else {
+		for (part of breadCrumbs){
+			story += `<p> ${myStory[part].text} </p>`;
+		}
+		return story;
+	}
+	
+}
 
+function buildChoices(){
+	let currentChapter = myStory[breadCrumbs[breadCrumbs.length - 1]],
+			choices = currentChapter.choices;
+			choiceList = '';
+	if (choices.length > 0) {
+		for(choice of choices){
+				choiceList += `<li data-dest='${choice[1]}' onclick='storyLoop(this.dataset.dest)'>${choice[0]}</li>`
+		}
+	} else {
+		choiceList = `This story has concluded. <span class="restart" onclick="restart()">Start another?</span>`;
+		itsNotOver = false;
+	}
+	return choiceList;
+}
 
+function buildBreadCrumbs(){
+	let crumbs = '';
+	if(breadCrumbs.length > 0){
+		for(crumb of breadCrumbs){
+			crumbs += `<li> ${crumb} </li>`;
+		}
+	} else {
+		crumbs = 'You seem lost... please reload the page'
+	}
+	return crumbs;
+}
 
+function storyLoop(choice){
+	
+	if (!choice) {
+		return 'Error, no choice made, exiting'
+	} else {
+		breadCrumbs.push(choice);
+	}
 
+	let story = buildStory(),
+			crumbs = buildBreadCrumbs();
+			choices = buildChoices();
+
+	if (!story) {
+		return 'Error loading story!'
+		
+	} 
+	storyElem.innerHTML = story;
+	crumbElem.innerHTML = crumbs;
+	choicesElem.innerHTML = choices;
+
+	if (itsNotOver){
+		return 'The Story Continues...'
+	} else {
+		return 'The story has concluded, this time...'
+	}
+}
+
+function restart(){
+	itsNotOver = true;
+	breadCrumbs = [];
+	storyLoop('intro');
+	return 'This tale rises from the ashes...'
+}
