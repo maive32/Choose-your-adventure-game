@@ -5,7 +5,7 @@ let breadCrumbs = [],
 		crumbElem = document.getElementById('crumbList');
 
 const myStory = { //story object
-        Start:{
+        intro:{
             text: `Waking up, you see the pasty boy. You've been retreating here for a while now from the outside world. Everything is white like you. Except for the black light bulb that shines above you, a laptop, tissues, a cat, and a sketchbook. You've been placed on this blanket with everything you need. What will you do?`,
             choice: [
                 ['Mess with laptop','laptop'],
