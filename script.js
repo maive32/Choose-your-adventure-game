@@ -79,7 +79,7 @@ const myStory = { //story object
 
 	forceThrough: {
 		text:`<h2>forceThrough</h2> You try to foce your way through the web, yet it is way too thick  to be walked through. You're going need something else to cut it.`,
-		choices:['','']
+		choices:['Look for something the boxes','boxes']
 	},
 
 	knifeEnding: {
@@ -136,23 +136,65 @@ const myStory = { //story object
 
 	keyTocat: {
 		text: `<h2>keytocat</h2> You did it, he turned into a real catboy! You two later marry, Pretty Boy and Jock attend your wedding.`,
-		choices: []
+		choices: [] //ending
 	},
 
 	keyTolaptop: {
-		text: `<h2>keytolaptop</h2> f`,
-		choices: []  //need to add text
+		text: `<h2>keytolaptop</h2> You use the key on the laptop keyboard, everything in the room starts to stutter. A set of glowing red footprints appear on the floor, the path that continues past your vision. A couple of hands that find themselves on the outskirts of white space try to stop you. Following it leads you to a tear. The color of black space seeping into the all white surrounding. Stepping through the tear, you look around and see more footprints, you decide to follow the footprints. The forest wwas covered in webbing, and became thicker the more you traveled towards the church. In the middle of the path was a black figure with 4 legs and a single eye on its head. It kicked and thrashed around, almost hitting you. "Sunny..." it seemed to say, the voice evidently echoing through the trees`,
+		choices: [
+			['Respond to the figure','respond'],
+			['Try to look away','lookaway']
+		],  
 	},
 
+	respond: {
+		text: `<h2>Respond</h2>You open your mouth as if to ask for help on a way out of here. It opens its single looking directly at you, "You should not have left, Sunny"- Its body wobbly moves and hides on the darkest corners of the greenery, you are unable to catch its direct location. Seemingly, disappearing from your view. As you try to leave the area, its shadowy tendrils wrap against your feet pulling you to the floor, you start to sink beneath- "I pity all the suffering you endured, so please, let me help you forget." it echoed around you.`,
+		choices: [
+			['Struggle','struggle1'],
+			['Give in','giveIn']
+		]
+	},
 
+	lookaway: {
+		text: `You look away, and the area seems to change. You don't know where you are, there's nothing here and there's no way out. What happened?`,
+		choices: [],
+	},
+
+	struggle1: {
+		text: `You hold onto the floor, barely managing to resist. A long jump rope hanging from a tree extends your way as you start to sink deeper, you kick the tendrils in the hopes it would let go. The tendrils recoil in response, losing their grasp. You try getting back on your feet and face the deer - “Why do you want to open these wounds? Haven't you wept enough?”- The deer falls into your shadow, you feel a cold sweat. From the shadow a black and white boy emerges, Omori; you somehow already know. He pulls out his knife and attempts to take a stab at you.`,
+		choices: [
+			['Accept him','Accept'],
+			['fight','fight1']
+		]
+	},
+	
+	Accept: {
+		text: `The black dots on Omori's eyes reflect yours and you take notice how his distant blank stare felt familiar, you come to realize Omori is a part of you. You get closer to him and whilst he prepares to lunge you hug him; Omori's surprised, evaporating slowly before there's only you with your arm reaching out, hugging yourself. 
+		You wake up to your room. You hear the sound of keys jingling in the living room, you rush to see what was happening. You see your mother getting the last boxes to move, unable to shake the rush of emotion, you embrace her, she asks what's wrong. You begin to recount the events of Mari's death…
+		`,
+		choices: [],
+
+	},
+	
+	giveIn: {
+		text: `You allow the tendrils to pull you deeper to the floor till only your head is exposed, feeling nothing from your body below anymore. The deer lies next to you cradling your head and singing a whimsy lullaby; your eyelids feel heavy and you close your eyes. Welcome back to white space.`,
+		choices: [],
+	},
+
+	fight1: {
+		text: `You try to fight Omori, dealing a couple of hits as he does the same to you. You use your skills to heal yourself and he does too. The struggle goes on forever…
+		`,
+		chocies: [],
+	},
+	
 	talk:{
 		text: `<h2>talk</h2> You ask the cat why it's here. They pull out a laptop and show you something that looks to be a boy in a white room. It explains that they're trying to develop an Indie game, that they'll be the first wo- cat to ever create one. The cat turns the laptop screen around, they're typing furiously. Wow they must be working hard. However a voice comes out of the computer screen. "On first blush, we might assume-". They're just watching videos, you sit down beside them and watch. You'll just have to continue your journey some other day.`,
-		choices: [],  //need to add text
+		choices: [],  //ending
 	},
 
 	ignore:{
 		text: `<h2>ignore</h2> It might be tempting to pet the cat, his weirdly empty eyeys stare at you but you're not in the mood. The cat starts talking, he says "Don't drink Orange Joe" and you wonder if it actually means anything."`,
-		choices: [],  //need to add text
+		choices: [],  //ending
 	},
 
 
