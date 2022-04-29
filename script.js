@@ -78,9 +78,10 @@ const myStory = { //story object
 	},
 
 	forceThrough: {
-		text:`<h2>forceThrough</h2>`,
-		choices:[]
+		text:`<h2>forceThrough</h2> You try to foce your way through the web, yet it is way too thick  to be walked through. You're going need something else to cut it.`,
+		choices:['','']
 	},
+
 	knifeEnding: {
 		text: '<h2>knifeEnding</h2> You walk down the stairs toward the kitchen. You grab the handle of the knife and anim it at your stomach. You loved her but you still killed her, and you took her away from everyone, disgusted by what you have done. You plunge the knife inside your chest and watch your view fall into darkness. Good night.',
 		choices: [] //ending
@@ -103,12 +104,12 @@ const myStory = { //story object
 
 
 	Hangman1: {
-		text: `<h2>Hangman1</h2>`,
+		text: `<h2>Hangman1</h2> You write hangman on the screen, you fail. I don't know what you were expecting.`,
 		choices: [],  //need to add text
 	},
 
 	Hellworld:{
-		text: `<h2>Hellworld</h2>`,
+		text: `<h2>Hellworld</h2> You type in hell world, and your surroundings change. You're transported into another world. A girl with long black hair is at the piano, playing a song you never heard before. She presses the keys d d d a G g f d f, and then turns around. Her head's bleeding, she smiles anyway. She says "hello little brother." The end.`,
 		choices: [],  //need to add text
 	},
 
@@ -145,16 +146,14 @@ const myStory = { //story object
 
 
 	talk:{
-		text: `<h2>talk</h2>`,
+		text: `<h2>talk</h2> You ask the cat why it's here. They pull out a laptop and show you something that looks to be a boy in a white room. It explains that they're trying to develop an Indie game, that they'll be the first wo- cat to ever create one. The cat turns the laptop screen around, they're typing furiously. Wow they must be working hard. However a voice comes out of the computer screen. "On first blush, we might assume-". They're just watching videos, you sit down beside them and watch. You'll just have to continue your journey some other day.`,
 		choices: [],  //need to add text
 	},
 
 	ignore:{
-		text: `<h2>ignore</h2>`,
+		text: `<h2>ignore</h2> It might be tempting to pet the cat, his weirdly empty eyeys stare at you but you're not in the mood. The cat starts talking, he says "Don't drink Orange Joe" and you wonder if it actually means anything."`,
 		choices: [],  //need to add text
 	},
-
-
 
 
 	
