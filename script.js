@@ -140,7 +140,7 @@ const myStory = { //story object
 	},
 
 	keyTolaptop: {
-		text: `<h2>keytolaptop</h2>`,
+		text: `<h2>keytolaptop</h2> f`,
 		choices: []  //need to add text
 	},
 
