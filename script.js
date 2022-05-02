@@ -95,6 +95,13 @@ const myStory = { //story object
 		],
 	},
 
+	petRock: {
+		text: `Without hesitation, you grab Kel's pet rock and fling it at the Gator guy's face. You run as fast as possible, Kel cries about he'll come back for Hector later. You hop on the elevator and insert the keycard, going straight to floor 5. You go through the hall, Aubrey is working as a receptionist. She's too busy scheduling people's calls to notice the two of you. Kel makes an effort to get Aubrey's attention, leaning on the counter. "Hey, hey, hey, hey, hey." Her lack of response causes Kel to pout, he throws a ball in her direction hitting her in the face, "Hey!! Look here!" She angrily glances, throwing him back the ball. Aubrey starts to complain with Kel, but she calms down when she sees Sunny- "Hey Sunny, I've gotten a job! But, I think I've gotten a job! But, I think I've gotten a bit carried away. I was looking for Hero, but I can't seem to find him anywhere, maybe you should talk with the boss." She points to the door behind her. You enter the boss's office. Jawsum lectures AUbrey as soon as she walks in, "AUBREY MY GODDAMN TOFU FUNDRAISER IS IN 12 HOURS, WHY AREN'T YOU WORKING?" Aubrey shoots Jawsum a guilty look, and says "I have to go Jawsum. We made a promise to find someone. Even if we did sign contracts with you, that's more important." Jawsum sighs gives an understanding smirk and simply states "Alright you can go as long as you bring Kel with." Kel and Aubrey nodded however they needed one more person.`,
+		choices: [
+			[],
+		],
+	},
+
 	//laptop
 	laptop: {
 		text: `<h2>laptop</h2> You mess with the laptop, and it turns on. The usual display is replaced with a game of hangman. Before it was just your desktop background with your journal. The heat of the laptop on your lap is comforting. You can write: `,
