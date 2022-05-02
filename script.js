@@ -13,12 +13,86 @@ const myStory = { //story object
 			['Mess with Laptop', 'laptop'],
 			['Use the Tissues', 'tissues'],
 			['Read the notebook', 'notebook'],
-		]
+		],
 	},
 	//notebook
 	notebook: {
-		text: `<h2>notebook</h2> You flip open the notebook and see your masterpieces, images of red hands and limbs are all over the page. Something specifically catches your eye, there is a photograph of your first duet on christmas, playing the violin with your sister on the piano. You tuck the photograph into your pockets.`,
-		choices: []//ending
+		text: `<h2>notebook</h2> You flip open the notebook and see your masterpieces, images of red hands and limbs are all over the page. Something specifically catches your eye, there is a photograph of your first duet on christmas, playing the violin with your sister on the piano. You tuck the photograph into your pockets. you hear sharp metal hit the ground. At the same time, you also see a door appear. You walk over to the knife first, and "equip it".`,
+		choices: [
+			['Stab youself','stab'],
+			['Open the door','open'],
+		],
+	},
+
+	stab: {
+		text: `You wake up to your bedroom. You've been sleeping for a while, you check the messages and do your chores around the house. You make yourself indigestible food. It's the end of the week, your mom is back from the sale. She takes you to your new house.`,
+		choices: [], // ending
+	},
+
+	open: {
+		text: `You ender and close the door behind you. THe color world of pastel contrasts nicely to your own dreary pallet, a bright whimsical world. Something's wrong though, your friends aren't here. Aubrey usually greets you first, as the brother Kel and Hero play cards. Kel would then yell at Aubrey for stepping over their game. You explore outside to see if you can find them. Climbing outside of the tree trunk, you can check the playground or the dock first`,
+		choices: [
+			['Playground','playground'],
+			['Dock','dock'],
+		],
+	}, 
+	
+	playground: {
+		text: `You decide that your friends are most likely at the playground, your other acquaintances are there. You arrive but you don't only not find what you're looking for, actually no one's here. You feel lonely, and you're not sure what to do to find them. You find a mirror floating in the middle of the playground. You look at yourself, and see that you can just play hide and seek with the mirror. You play for a little while.`,
+		choices: [
+			['Continue to play hide and seek','hideAndseek'],
+			['Return to the dock','dock']
+		],
+	},
+
+	hideAndseek: {
+		text: `You keep playing hide and seek, you don't need them. You keep playing, you get tired. You decide that was enough action for today and return to the neighbor's room to rest.`,
+		choices: []
+	},
+
+	dock: {
+		text: `You find your sister, Mari at the dock. She greets you with a kind smile, and walks towards you. She explains that everyone was forced to sign contracts, and now everyone works at the Last Resort, an underwater casino. Mari says, "I know it's scary but we'll have to cross the water to find them. Don't worry though, I'll keep you company!". You've always been terrified of drowning, however you breathe in and calm down. You put your feet in the water first before fully going in. You're almost to the well, Mari stops. "You'll have to continue on your own, you know I can't always be there for you." She says before disappears You enter deeper well. In front is a highway that stretches for miles, a cab is stationed nearby`,
+		choices: [
+			['Take the cab','cab'],
+		],
+	},
+
+	cab: {
+		text: `You take the cab over the Last Resort. Outside waiting for you is Kel, as he notices you he runs in your direction. "Hey Sunny! Where've you been, buddy? Everyone got tricked into signing contracts, we all have jobs now. My job is to point to the Last Resort... I don't even know why people like this job, we should all get out of here. I don't know where Hero is, but I know where Aubrey is. Let's go find her!" Kel shouts. Inside the Resort, are some alligator guys. Kell informs you he lost the elevator pass that will take you to the 5th floor.`,
+		choices: [
+			['Gamble','gamble'],
+			['Check the hotel rooms','hotelRooms'],
+			['Check the bathrooms','bathrooms'],
+		],
+	},
+
+	gamble: {
+		text: `You waste a couple of Clams trying to play the slot machines`,
+		choices: [
+			[],
+		],
+	},
+
+	bathrooms: {
+		text: `The bathroom is clean, a gator guy is in there  admiring his own reflection. You search to see if there's anything, there isn't. You force Kel to wash his hands and then leave.`,
+		choices: [
+			['Check the hotel room','hotelRooms'],
+		],
+	},
+
+	hotelRooms: {
+		text: `You check the hotel rooms, looking in people's suitcases. You finally find a keycard, and head for the elevator. Before you could, a gator guy rushes into the room, he's security and you're not allowed in this hotel room. You need some way of escaping`,
+		choices: [
+			['Escape through the vents','vents'],
+			["Throw Kel's pet rock",'petRock'],
+		],
+	},
+
+	vents: {
+		text: `You try the vent but you're too slow, the gator guy grabs you before you can reach it. He takes away your keycard, and he throws out the building, and bans you forever from the Last Resort.`,
+		choices: [
+			[],
+		],
 	},
 
 	//laptop
@@ -27,7 +101,7 @@ const myStory = { //story object
 		choices: [
 			['Welcome to black space', 'blackspace'],
 			['Hangman', 'Hangman1'],
-			['Hell world', 'Hellworld']
+			['Hell world', 'Hellworld'],
 		],
 	},
 
@@ -37,14 +111,14 @@ const myStory = { //story object
 			['Door on the left', 'leftDoor'],
 			['Door in the in front', 'frontDoor'],
 			['Door on the right', 'rightDoor'],
-		]
+		],
 	},
 
 	leftDoor: {
 		text: `<h2>LeftDoor</h2> You go closer to the door and you hear a woman's voice "Sunny, let me in", you freeze and run away. The door on the left disappears. What door next?`,
 		choices: [
 			['Door on the right', 'rightDoor'],
-		]
+		],
 	},
 
 	frontDoor: {
@@ -52,6 +126,7 @@ const myStory = { //story object
 		choices: []//ending
 
 	},
+
 	rightDoor: {
 		text: `<h2>rightdoor</h2> As you open up the door, you feel another person pull the knob. It's your friend, Basil. He holds your hand and guides you inside, you're both inside a garden room adorned with flowers. He shows you a white flower and says "Sunny, I know things may seem though ever since she passed, but here we have this." He hands you the flower, you put it in your pocket, "It's a Gladiolus, they represent strength of character; whenever you feel afraid, just hold on to it." He gives you a soft smile before leading you outside. You feel alone. You stand across a staircase, the room is dark. Hands come out of the stairs, you can see something with a gaping mouth and sharp teeth. You decide to confront our fears and walk down towards it`,
 		choices: [
@@ -74,12 +149,14 @@ const myStory = { //story object
 		choices: [
 			['Take a knife from the kitchen', 'knifeEnding'],
 			['Go to the door', 'trueEnding'],
-		]
+		],
 	},
 
 	forceThrough: {
 		text:`<h2>forceThrough</h2> You try to foce your way through the web, yet it is way too thick  to be walked through. You're going need something else to cut it.`,
-		choices:['Look for something the boxes','boxes']
+		choices:[
+			['Look for something the boxes','boxes']
+		],
 	},
 
 	knifeEnding: {
@@ -122,7 +199,7 @@ const myStory = { //story object
 		choices: [
 			['Pet the cat', 'pet'],
 			['Talk with the cat', 'talk'],
-			['Ignore it and hopes it goes away', 'ignore']
+			['Ignore it and hopes it goes away', 'ignore'],
 		],
 	},
 
@@ -130,7 +207,7 @@ const myStory = { //story object
 		text: `<h2>pet</h2> You pet the cat, it's very fluffy. The cat is half red, and blue with a yellow belly. Sometimes you wonder if it ever became a real boy. He barfs up a key. You pick it up.`,
 		choices: [
 			['Try to use it on the laptop', 'keyTolaptop'],
-			['Use the key on the cat', 'keyTocat']
+			['Use the key on the cat', 'keyTocat'],
 		],
 	},
 
@@ -143,7 +220,7 @@ const myStory = { //story object
 		text: `<h2>keytolaptop</h2> You use the key on the laptop keyboard, everything in the room starts to stutter. A set of glowing red footprints appear on the floor, the path that continues past your vision. A couple of hands that find themselves on the outskirts of white space try to stop you. Following it leads you to a tear. The color of black space seeping into the all white surrounding. Stepping through the tear, you look around and see more footprints, you decide to follow the footprints. The forest wwas covered in webbing, and became thicker the more you traveled towards the church. In the middle of the path was a black figure with 4 legs and a single eye on its head. It kicked and thrashed around, almost hitting you. "Sunny..." it seemed to say, the voice evidently echoing through the trees`,
 		choices: [
 			['Respond to the figure','respond'],
-			['Try to look away','lookaway']
+			['Try to look away','lookaway'],
 		],  
 	},
 
@@ -151,7 +228,7 @@ const myStory = { //story object
 		text: `<h2>Respond</h2>You open your mouth as if to ask for help on a way out of here. It opens its single looking directly at you, "You should not have left, Sunny"- Its body wobbly moves and hides on the darkest corners of the greenery, you are unable to catch its direct location. Seemingly, disappearing from your view. As you try to leave the area, its shadowy tendrils wrap against your feet pulling you to the floor, you start to sink beneath- "I pity all the suffering you endured, so please, let me help you forget." it echoed around you.`,
 		choices: [
 			['Struggle','struggle1'],
-			['Give in','giveIn']
+			['Give in','giveIn'],
 		]
 	},
 
@@ -164,7 +241,7 @@ const myStory = { //story object
 		text: `You hold onto the floor, barely managing to resist. A long jump rope hanging from a tree extends your way as you start to sink deeper, you kick the tendrils in the hopes it would let go. The tendrils recoil in response, losing their grasp. You try getting back on your feet and face the deer - “Why do you want to open these wounds? Haven't you wept enough?”- The deer falls into your shadow, you feel a cold sweat. From the shadow a black and white boy emerges, Omori; you somehow already know. He pulls out his knife and attempts to take a stab at you.`,
 		choices: [
 			['Accept him','Accept'],
-			['fight','fight1']
+			['fight','fight1'],
 		]
 	},
 	
