@@ -90,16 +90,38 @@ const myStory = { //story object
 
 	vents: {
 		text: `You try the vent but you're too slow, the gator guy grabs you before you can reach it. He takes away your keycard, and he throws out the building, and bans you forever from the Last Resort.`,
-		choices: [
-			[],
-		],
+		choices: [],
 	},
 
 	petRock: {
-		text: `Without hesitation, you grab Kel's pet rock and fling it at the Gator guy's face. You run as fast as possible, Kel cries about he'll come back for Hector later. You hop on the elevator and insert the keycard, going straight to floor 5. You go through the hall, Aubrey is working as a receptionist. She's too busy scheduling people's calls to notice the two of you. Kel makes an effort to get Aubrey's attention, leaning on the counter. "Hey, hey, hey, hey, hey." Her lack of response causes Kel to pout, he throws a ball in her direction hitting her in the face, "Hey!! Look here!" She angrily glances, throwing him back the ball. Aubrey starts to complain with Kel, but she calms down when she sees Sunny- "Hey Sunny, I've gotten a job! But, I think I've gotten a job! But, I think I've gotten a bit carried away. I was looking for Hero, but I can't seem to find him anywhere, maybe you should talk with the boss." She points to the door behind her. You enter the boss's office. Jawsum lectures AUbrey as soon as she walks in, "AUBREY MY GODDAMN TOFU FUNDRAISER IS IN 12 HOURS, WHY AREN'T YOU WORKING?" Aubrey shoots Jawsum a guilty look, and says "I have to go Jawsum. We made a promise to find someone. Even if we did sign contracts with you, that's more important." Jawsum sighs gives an understanding smirk and simply states "Alright you can go as long as you bring Kel with." Kel and Aubrey nodded however they needed one more person.`,
+		text: `Without hesitation, you grab Kel's pet rock and fling it at the Gator guy's face. You run as fast as possible, Kel cries about he'll come back for Hector later. You hop on the elevator and insert the keycard, going straight to floor 5. You go through the hall, Aubrey is working as a receptionist. She's too busy scheduling people's calls to notice the two of you. Kel makes an effort to get Aubrey's attention, leaning on the counter. "Hey, hey, hey, hey, hey." Her lack of response causes Kel to pout, he throws a ball in her direction hitting her in the face, "Hey!! Look here!" She angrily glances, throwing him back the ball. Aubrey starts to complain with Kel, but she calms down when she sees Sunny- "Hey Sunny, I've gotten a job! But, I think I've gotten a job! But, I think I've gotten a bit carried away. I was looking for Hero, but I can't seem to find him anywhere, maybe you should talk with the boss." She points to the door behind her. You enter the boss's office. Jawsum lectures AUbrey as soon as she walks in, "AUBREY MY GODDAMN TOFU FUNDRAISER IS IN 12 HOURS, WHY AREN'T YOU WORKING?" Aubrey shoots Jawsum a guilty look, and says "I have to go Jawsum. We made a promise to find someone. Even if we did sign contracts with you, that's more important." Jawsum sighs gives an understanding smirk and simply states "Alright you can go as long as you bring Kel with." Kel and Aubrey nodded however they needed one more person. Kel knew who, “Uhhh can we also have Hero, my brother?” Jawsum blinked before letting out a strong laugh, “You’re joking, right? Hero is the best employee I’ve ever had. Productivity has increased 5000% ever since he started working here.” He was laughing for a while until he realized none of us were laughing. “Oh” he plainly said, Hero enters into the room with Jawsum’s coffee. He exclaimed of how he finished setting everything up for the tofu fundraiser raiser. As he finishes, he turns in your direction. Aubrey clears her throat before whispering, “Basil”. Hero shifts awkwardly, he stares for a minute before declaring, “Oh how I forget something so important? We need to go find Basil”. He was about to rush out the room but Jawsum shouted, “Hero, there’s still work to be done. You haven’t ushered in the VIP for the fundraiser yet. You signed a contact”. Hero argued that it was just mesly piece of paper. Jawsum snapped his fingers to call in his security guards, “the penalty for breaking a contract is DEATH.” What do you do?`,
 		choices: [
-			[],
+			['Beat them up','beat'],
+			['Break the intercom','intercom']
 		],
+	},
+
+	beat: {
+		text: `You with ease take out the two Gator guys that called, Jawsum speaks on the intercom and 4 more Gator guys show up. They outnumber you and they beat you up until you can't feel anything, the last thing you see is their teeth`,
+		choices: [],
+	},
+
+	intercom: {
+		text: `You destory the intercom by kicking it in, Jawsum slams his fist against the desk. His bodyguards are defeated, he signs and asks, "Is there really I can do to get you to stay? OH! What about a job? You, there!", he's peering at you. "How about you owrk for me? HUH??"`,
+		choices: [
+			['Accept','accept'],
+			['Deny','deny'],
+		],
+	},
+
+	accept: {
+		text: `"Good! Sign here.", he hands you a contract. You sign and he puts the contract into the drawer. Your friends peered at one another, but they shrugged. "I'm sure Sunny knows what he's doing", Aubrey said. Everyone goes back to their jobs. You can't speak, or do much of anything. You're stuck as a bed rater.`,
+		choices: [],
+	},
+
+	deny: {
+		text: `"I REALLY can't convince you to stay huh?", Jawsum eats the contracts and turns around, "Go you crazy kids." You leave for home, you play on the playground now that some of your friends are back. Kel suggests a game of hide and seek, you're happy but you feel like someone's missing. Oh well.`,
+		choices: ['',''],
 	},
 
 	//laptop
