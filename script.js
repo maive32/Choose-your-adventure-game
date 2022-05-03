@@ -17,7 +17,7 @@ const myStory = { //story object
 	},
 	//notebook
 	notebook: {
-		text: `<h2>notebook</h2> You flip open the notebook and see your masterpieces, images of red hands and limbs are all over the page. Something specifically catches your eye, there is a photograph of your first duet on christmas, playing the violin with your sister on the piano. You tuck the photograph into your pockets. you hear sharp metal hit the ground. At the same time, you also see a door appear. You walk over to the knife first, and "equip it".`,
+		text: `<h2>notebook</h2> You flip open the notebook and see your masterpieces, images of red hands and limbs are all over the page. Something specifically catches your eye, there is a photograph of your first duet on christmas, playing the violin with your sister on the piano. You tuck the photograph into your pockets. you hear sharp metal hit the ground. At the same time, you also see a door appear. You walk over to the knife first, and "equip it."`,
 		choices: [
 			['Stab youself','stab'],
 			['Open the door','open'],
@@ -25,12 +25,12 @@ const myStory = { //story object
 	},
 
 	stab: {
-		text: `You wake up to your bedroom. You've been sleeping for a while, you check the messages and do your chores around the house. You make yourself indigestible food. It's the end of the week, your mom is back from the sale. She takes you to your new house.`,
+		text: `You wake up to your bedroom. You've been sleeping for a while, you check your messages and do your chores around the house. You make yourself indigestible food. It's the end of the week, your mom is back from the sale. She takes you to your new house.`,
 		choices: [], // ending
 	},
 
 	open: {
-		text: `You ender and close the door behind you. THe color world of pastel contrasts nicely to your own dreary pallet, a bright whimsical world. Something's wrong though, your friends aren't here. Aubrey usually greets you first, as the brother Kel and Hero play cards. Kel would then yell at Aubrey for stepping over their game. You explore outside to see if you can find them. Climbing outside of the tree trunk, you can check the playground or the dock first`,
+		text: `You ender and close the door behind you. THe color world of pastel contrasts nicely to your own dreary pallet, a bright whimsical world. Something's wrong though, your friends aren't here. Aubrey usually greets you first, as the brother Kel and Hero play cards. Kel would then yell at Aubrey for stepping over their game. You explore outside to see if you can find them. Climbing outside of the tree trunk, you can check the playground or the dock first.`,
 		choices: [
 			['Playground','playground'],
 			['Dock','dock'],
@@ -51,7 +51,7 @@ const myStory = { //story object
 	},
 
 	dock: {
-		text: `You find your sister, Mari at the dock. She greets you with a kind smile, and walks towards you. She explains that everyone was forced to sign contracts, and now everyone works at the Last Resort, an underwater casino. Mari says, "I know it's scary but we'll have to cross the water to find them. Don't worry though, I'll keep you company!". You've always been terrified of drowning, however you breathe in and calm down. You put your feet in the water first before fully going in. You're almost to the well, Mari stops. "You'll have to continue on your own, you know I can't always be there for you." She says before disappears You enter deeper well. In front is a highway that stretches for miles, a cab is stationed nearby`,
+		text: `You find your sister, Mari at the dock. She greets you with a kind smile, and walks towards you. She explains that everyone was forced to sign contracts, and now everyone works at the Last Resort, an underwater casino. Mari says, "I know it's scary but we'll have to cross the water to find them. Don't worry though, I'll keep you company!". You've always been terrified of drowning, however you breathe in and calm down. You put your feet in the water first before fully going in. You're almost to the well, Mari stops. "You'll have to continue on your own, you know I can't always be there for you." She says before disappears You enter deeper well. In front is a highway that stretches for miles, a cab is stationed nearby.`,
 		choices: [
 			['Take the cab','cab'],
 		],
@@ -67,7 +67,7 @@ const myStory = { //story object
 	},
 
 	gamble: {
-		text: `You waste a couple of Clams trying to play the slot machines`,
+		text: `You waste a couple of Clams trying to play the slot machines.`,
 		choices: [
 			[],
 		],
@@ -81,7 +81,7 @@ const myStory = { //story object
 	},
 
 	hotelRooms: {
-		text: `You check the hotel rooms, looking in people's suitcases. You finally find a keycard, and head for the elevator. Before you could, a gator guy rushes into the room, he's security and you're not allowed in this hotel room. You need some way of escaping`,
+		text: `You check the hotel rooms, looking in people's suitcases. You finally find a keycard, and head for the elevator. Before you could, a gator guy rushes into the room, he's security and you're not allowed in this hotel room. You need some way of escaping.`,
 		choices: [
 			['Escape through the vents','vents'],
 			["Throw Kel's pet rock",'petRock'],
@@ -94,7 +94,7 @@ const myStory = { //story object
 	},
 
 	petRock: {
-		text: `Without hesitation, you grab Kel's pet rock and fling it at the Gator guy's face. You run as fast as possible, Kel cries about he'll come back for Hector later. You hop on the elevator and insert the keycard, going straight to floor 5. You go through the hall, Aubrey is working as a receptionist. She's too busy scheduling people's calls to notice the two of you. Kel makes an effort to get Aubrey's attention, leaning on the counter. "Hey, hey, hey, hey, hey." Her lack of response causes Kel to pout, he throws a ball in her direction hitting her in the face, "Hey!! Look here!" She angrily glances, throwing him back the ball. Aubrey starts to complain with Kel, but she calms down when she sees Sunny- "Hey Sunny, I've gotten a job! But, I think I've gotten a job! But, I think I've gotten a bit carried away. I was looking for Hero, but I can't seem to find him anywhere, maybe you should talk with the boss." She points to the door behind her. You enter the boss's office. Jawsum lectures AUbrey as soon as she walks in, "AUBREY MY GODDAMN TOFU FUNDRAISER IS IN 12 HOURS, WHY AREN'T YOU WORKING?" Aubrey shoots Jawsum a guilty look, and says "I have to go Jawsum. We made a promise to find someone. Even if we did sign contracts with you, that's more important." Jawsum sighs gives an understanding smirk and simply states "Alright you can go as long as you bring Kel with." Kel and Aubrey nodded however they needed one more person. Kel knew who, “Uhhh can we also have Hero, my brother?” Jawsum blinked before letting out a strong laugh, “You’re joking, right? Hero is the best employee I’ve ever had. Productivity has increased 5000% ever since he started working here.” He was laughing for a while until he realized none of us were laughing. “Oh” he plainly said, Hero enters into the room with Jawsum’s coffee. He exclaimed of how he finished setting everything up for the tofu fundraiser raiser. As he finishes, he turns in your direction. Aubrey clears her throat before whispering, “Basil”. Hero shifts awkwardly, he stares for a minute before declaring, “Oh how I forget something so important? We need to go find Basil”. He was about to rush out the room but Jawsum shouted, “Hero, there’s still work to be done. You haven’t ushered in the VIP for the fundraiser yet. You signed a contact”. Hero argued that it was just mesly piece of paper. Jawsum snapped his fingers to call in his security guards, “the penalty for breaking a contract is DEATH.” What do you do?`,
+		text: `Without hesitation, you grab Kel's pet rock and fling it at the Gator guy's face. You run as fast as possible, Kel cries about he'll come back for Hector later. You hop on the elevator and insert the keycard, going straight to floor 5. You go through the hall, Aubrey is working as a receptionist. She's too busy scheduling people's calls to notice the two of you. Kel makes an effort to get Aubrey's attention, leaning on the counter. "Hey, hey, hey, hey, hey." Her lack of response causes Kel to pout, he throws a ball in her direction hitting her in the face, "Hey!! Look here!" She angrily glances, throwing him back the ball. Aubrey starts to complain with Kel, but she calms down when she sees Sunny- "Hey Sunny, I've gotten a job! But, I think I've gotten a job! But, I think I've gotten a bit carried away. I was looking for Hero, but I can't seem to find him anywhere, maybe you should talk with the boss." She points to the door behind her. You enter the boss's office. Jawsum lectures AUbrey as soon as she walks in, "AUBREY MY GODDAMN TOFU FUNDRAISER IS IN 12 HOURS, WHY AREN'T YOU WORKING?" Aubrey shoots Jawsum a guilty look, and says "I have to go Jawsum. We made a promise to find someone. Even if we did sign contracts with you, that's more important." Jawsum sighs gives an understanding smirk and simply states "Alright you can go as long as you bring Kel with." Kel and Aubrey nodded however they needed one more person. Kel knew who, “Uhhh can we also have Hero, my brother?” Jawsum blinked before letting out a strong laugh, “You're joking, right? Hero is the best employee I've ever had. Productivity has increased 5000% ever since he started working here.” He was laughing for a while until he realized none of us were laughing. “Oh” he plainly said, Hero enters into the room with Jawsum's coffee. He exclaimed of how he finished setting everything up for the tofu fundraiser raiser. As he finishes, he turns in your direction. Aubrey clears her throat before whispering, “Basil”. Hero shifts awkwardly, he stares for a minute before declaring, “Oh how I forget something so important? We need to go find Basil”. He was about to rush out the room but Jawsum shouted, “Hero, there's still work to be done. You haven't ushered in the VIP for the fundraiser yet. You signed a contact”. Hero argued that it was just mesly piece of paper. Jawsum snapped his fingers to call in his security guards, “the penalty for breaking a contract is DEATH.” What do you do?`,
 		choices: [
 			['Beat them up','beat'],
 			['Break the intercom','intercom']
@@ -102,7 +102,7 @@ const myStory = { //story object
 	},
 
 	beat: {
-		text: `You with ease take out the two Gator guys that called, Jawsum speaks on the intercom and 4 more Gator guys show up. They outnumber you and they beat you up until you can't feel anything, the last thing you see is their teeth`,
+		text: `You with ease take out the two Gator guys that called, Jawsum speaks on the intercom and 4 more Gator guys show up. They outnumber you and they beat you up until you can't feel anything, the last thing you see is their teeth.`,
 		choices: [],
 	},
 
@@ -157,7 +157,7 @@ const myStory = { //story object
 	},
 
 	rightDoor: {
-		text: `<h2>rightdoor</h2> As you open up the door, you feel another person pull the knob. It's your friend, Basil. He holds your hand and guides you inside, you're both inside a garden room adorned with flowers. He shows you a white flower and says "Sunny, I know things may seem though ever since she passed, but here we have this." He hands you the flower, you put it in your pocket, "It's a Gladiolus, they represent strength of character; whenever you feel afraid, just hold on to it." He gives you a soft smile before leading you outside. You feel alone. You stand across a staircase, the room is dark. Hands come out of the stairs, you can see something with a gaping mouth and sharp teeth. You decide to confront our fears and walk down towards it`,
+		text: `<h2>rightdoor</h2> As you open up the door, you feel another person pull the knob. It's your friend, Basil. He holds your hand and guides you inside, you're both inside a garden room adorned with flowers. He shows you a white flower and says "Sunny, I know things may seem though ever since she passed, but here we have this." He hands you the flower, you put it in your pocket, "It's a Gladiolus, they represent strength of character; whenever you feel afraid, just hold on to it." He gives you a soft smile before leading you outside. You feel alone. You stand across a staircase, the room is dark. Hands come out of the stairs, you can see something with a gaping mouth and sharp teeth. You decide to confront our fears and walk down towards it.`,
 		choices: [
 			['Look at the flower', 'flower'],
 			['Look at the monster', 'monster'],
@@ -165,7 +165,7 @@ const myStory = { //story object
 	},
 
 	flower: {
-		text: `<h2>flower</h2> You grab the Gladiolus in your hand, remembering Basi's words. It helps you calm down. The monster slowly fades away as you walk further into the darkness ahead. You soon reach the bottom of the staircase, and look at some of the spider webs that block your way from here to the living room across. You shudder at the thought of spiders being around`,
+		text: `<h2>flower</h2> You grab the Gladiolus in your hand, remembering Basi's words. It helps you calm down. The monster slowly fades away as you walk further into the darkness ahead. You soon reach the bottom of the staircase, and look at some of the spider webs that block your way from here to the living room across. You shudder at the thought of spiders being around.`,
 		choices: [
 			['Look for something in the boxes', 'boxes'],
 			['Try to force through the web', 'forceThrough'],
@@ -224,7 +224,7 @@ const myStory = { //story object
 
 	//tissues
 	tissues: {
-		text: `<h2>Tissues</h2>You sob into the tissue, you've been feeling terrible lately. You see a bulbous cat meowing in front of you`,
+		text: `<h2>Tissues</h2>You sob into the tissue, you've been feeling terrible lately. You see a bulbous cat meowing in front of you.`,
 		choices: [
 			['Pet the cat', 'pet'],
 			['Talk with the cat', 'talk'],
@@ -246,7 +246,7 @@ const myStory = { //story object
 	},
 
 	keyTolaptop: {
-		text: `<h2>keytolaptop</h2> You use the key on the laptop keyboard, everything in the room starts to stutter. A set of glowing red footprints appear on the floor, the path that continues past your vision. A couple of hands that find themselves on the outskirts of white space try to stop you. Following it leads you to a tear. The color of black space seeping into the all white surrounding. Stepping through the tear, you look around and see more footprints, you decide to follow the footprints. The forest wwas covered in webbing, and became thicker the more you traveled towards the church. In the middle of the path was a black figure with 4 legs and a single eye on its head. It kicked and thrashed around, almost hitting you. "Sunny..." it seemed to say, the voice evidently echoing through the trees`,
+		text: `<h2>keytolaptop</h2> You use the key on the laptop keyboard, everything in the room starts to stutter. A set of glowing red footprints appear on the floor, the path that continues past your vision. A couple of hands that find themselves on the outskirts of white space try to stop you. Following it leads you to a tear. The color of black space seeping into the all white surrounding. Stepping through the tear, you look around and see more footprints, you decide to follow the footprints. The forest wwas covered in webbing, and became thicker the more you traveled towards the church. In the middle of the path was a black figure with 4 legs and a single eye on its head. It kicked and thrashed around, almost hitting you. "Sunny..." it seemed to say, the voice evidently echoing through the trees.`,
 		choices: [
 			['Respond to the figure','respond'],
 			['Try to look away','lookaway'],
