@@ -4,9 +4,10 @@ h1 {
 	
 }
 
+
 ol, .story, .sticky {
 	font-family: 'Shadows Into Light', cursive;
-	font-size: larger;
+	font-size: 22px;
 	
 }
 
@@ -14,6 +15,14 @@ ol, .story, .sticky {
 	position: sticky;
     top: 1rem;
 
+}
+
+.story{
+	width:75%;
+}
+
+.breadcrumbs {
+    width: 20%;
 }
 
 body {
@@ -34,6 +43,7 @@ body {
 	margin: 0 auto;
 }
 
+
 #choiceList li:hover
  {
 	color: rgb(255, 255, 255);
@@ -43,6 +53,4 @@ body {
 
 }
 
-ol {
-	list-style: georgian inside url('');
-}
+
