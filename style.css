@@ -1,8 +1,11 @@
 h1 {
 	font-family: 'Arvo', serif;
+
+	
 }
 
 ol, .story, .sticky {
 	font-family: 'Shadows Into Light', cursive;
+	font-size: larger;
 }
 
