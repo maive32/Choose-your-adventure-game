@@ -26,7 +26,7 @@ ol, .story, .sticky {
 }
 
 body {
-	background-color: #a0f2fa;
+	background-color: #f0adf0;
 }
 
 .restart{
@@ -48,8 +48,7 @@ body {
  {
 	color: rgb(255, 255, 255);
 	cursor: pointer;
-	list-style: url('');
-
+	list-style: url('/img/whatb.png');
 
 }
 
