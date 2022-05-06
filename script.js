@@ -10,8 +10,8 @@ const myStory = { //story object
 		text: `<h2>Intro</h2> Waking up, you see the pasty boy. You've been retreating here for a while now from the outside world. Everything is white like you. Except for the black light bulb that shines above you, a laptop, tissues, a cat, and a sketchbook. You've been placed on this blanket with everything you need. What will you do?`,
 
 		choices: [
-			['Mess with Laptop', 'laptop'],
-			['Use the Tissues', 'tissues'],
+			['Mess with laptop', 'laptop'],
+			['Use the tissues', 'tissues'],
 			['Read the notebook', 'notebook'],
 		],
 	},
@@ -19,8 +19,8 @@ const myStory = { //story object
 	notebook: {
 		text: `<h2>Notebook</h2> You flip open the notebook and see your masterpieces, images of red hands and limbs are all over the page. Something specifically catches your eye, there is a photograph of your first duet on christmas, playing the violin with your sister on the piano. You tuck the photograph into your pockets. you hear sharp metal hit the ground. At the same time, you also see a door appear. You walk over to the knife first, and "equip it."`,
 		choices: [
-			['Stab youself','stab'],
-			['Open the door','open'],
+			['Stab youself', 'stab'],
+			['Open the door', 'open'],
 		],
 	},
 
@@ -32,96 +32,96 @@ const myStory = { //story object
 	open: {
 		text: `<h2>Open</h2>You enter and close the door behind you. The color world of pastel contrasts nicely to your own dreary pallet, a bright whimsical world. Something's wrong though, your friends aren't here. Aubrey usually greets you first, as the brother Kel and Hero play cards. Kel would then yell at Aubrey for stepping over their game. You explore outside to see if you can find them. Climbing outside of the tree trunk, you can check the playground or the dock first.`,
 		choices: [
-			['Playground','playground'],
-			['Dock','dock'],
+			['Playground', 'playground'],
+			['Dock', 'dock'],
 		],
-	}, 
-	
+	},
+
 	playground: {
 		text: `<h2>Playground</h2>You decide that your friends are most likely at the playground, your other acquaintances are there. You arrive but you don't only not find what you're looking for, actually no one's here. You feel lonely, and you're not sure what to do to find them. You find a mirror floating in the middle of the playground. You look at yourself, and see that you can just play hide and seek with the mirror. You play for a little while.`,
 		choices: [
-			['Continue to play hide and seek','hideAndseek'],
-			['Return to the dock','dock']
+			['Continue to play hide and seek', 'hideAndseek'],
+			['Return to the dock', 'dock']
 		],
 	},
 
 	hideAndseek: {
 		text: `<h2>Hide and seek</h2>You keep playing hide and seek, you don't need them. You keep playing, you get tired. You decide that was enough action for today and return to the neighbor's room to rest.`,
-		choices: []
+		choices: [] //ending
 	},
 
 	dock: {
 		text: `<h2>Dock</h2>You find your sister, Mari at the dock. She greets you with a kind smile, and walks towards you. She explains that everyone was forced to sign contracts, and now everyone works at the Last Resort, an underwater casino. Mari says, "I know it's scary but we'll have to cross the water to find them. Don't worry though, I'll keep you company!". You've always been terrified of drowning, however you breathe in and calm down. You put your feet in the water first before fully going in. You're almost to the well, Mari stops. "You'll have to continue on your own, you know I can't always be there for you." She says before disappears You enter deeper well. In front is a highway that stretches for miles, a cab is stationed nearby.`,
 		choices: [
-			['Take the cab','cab'],
+			['Take the cab', 'cab'],
 		],
 	},
 
 	cab: {
 		text: `<h2>Cab</h2>You take the cab over the Last Resort. Outside waiting for you is Kel, as he notices you he runs in your direction. "Hey Sunny! Where've you been, buddy? Everyone got tricked into signing contracts, we all have jobs now. My job is to point to the Last Resort... I don't even know why people like this job, we should all get out of here. I don't know where Hero is, but I know where Aubrey is. Let's go find her!" Kel shouts. Inside the Resort, are some alligator guys. Kell informs you he lost the elevator pass that will take you to the 5th floor.`,
 		choices: [
-			['Gamble','gamble'],
-			['Check the hotel rooms','hotelRooms'],
-			['Check the bathrooms','bathrooms'],
+			['Gamble', 'gamble'],
+			['Check the hotel rooms', 'hotelRooms'],
+			['Check the bathrooms', 'bathrooms'],
 		],
 	},
 
 	gamble: {
 		text: `<h2>Gamble</h2>You waste a couple of Clams trying to play the slot machines.`,
 		choices: [
-			[],
+			['Check the hotel rooms', 'hotelRooms'],
 		],
 	},
 
 	bathrooms: {
 		text: `<h2>Bathrooms</h2>The bathroom is clean, a gator guy is in there  admiring his own reflection. You search to see if there's anything, there isn't. You force Kel to wash his hands and then leave.`,
 		choices: [
-			['Check the hotel room','hotelRooms'],
+			['Check the hotel room', 'hotelRooms'],
 		],
 	},
 
 	hotelRooms: {
 		text: `<h2>Hotel rooms</h2>You check the hotel rooms, looking in people's suitcases. You finally find a keycard, and head for the elevator. Before you could, a gator guy rushes into the room, he's security and you're not allowed in this hotel room. You need some way of escaping.`,
 		choices: [
-			['Escape through the vents','vents'],
-			["Throw Kel's pet rock",'petRock'],
+			['Escape through the vents', 'vents'],
+			["Throw Kel's pet rock", 'petRock'],
 		],
 	},
 
 	vents: {
 		text: `<h2>Vents</h2>You try the vent but you're too slow, the gator guy grabs you before you can reach it. He takes away your keycard, and he throws out the building, and bans you forever from the Last Resort.`,
-		choices: [],
+		choices: [], //ending
 	},
 
 	petRock: {
 		text: `<h2>Pet Rock</h2>Without hesitation, you grab Kel's and fling it at the Gator guy's face. You run as fast as possibl3e, Kel cires about he'll come back for Hector later. You hop on the elevator and insert the keycard, going straight to floor 5. You go through the hall, Aubrey is working as a receptionist. She's too busy scheduling people's calls to notice the two of you. Kel makes an effor to get Aubrey's attention, leaning on the counter. "Hey, hey, hey, hey, hey." Her lack of response causes Kel to pout, he throws a ball in her direction hitting her in the face, "Hey!! Look here!" She angrily glances, throwing him back the ball. Aubrey starts to complain with Kel, but she calms down when she sees Sunny- "Hey Sunny, I've gotten a job! But, I think I've gotten a bit carried away. I was looking for Hero, and I can't seem to find him anywhere, maybe you should talk with the boss." She points to the door behind her. You enter the boss's office. Jawsum lectures Aubrey as soon as she walks in, "AUBREY MY GODDAMN TOFU FUNDRAISER IS IN 12 HOURS, WHY AREN'T YOU WORKING?, Aubrey shoots Jawsum a guilty look, and says "I have to go Jawsum. We made a promise to find someone. Even if we did sign contracts with you, that's more important." Jawsum sighs but gives an understanding smirk and simply states "Alright you can go as long as you bring Kel wit you." Kel and Aubrey nodded however they needed one more person. Kel knew who, "Uhhh can we also have Hero, my brother?" Jawsum blinked before letting out a strong laugh, "You're joking, right? Hero is the best employee I've ever had. Productivity has increased 5000% ever since he started working here." He was laughing for a while until he realized none of us were laughing. "oh" he plainly sounded, Hero enters into the room with Jawsum's coffee. He exclaimed of how he finished setting everything up for the tofu fundraiser. As he finishes, he turns in your direction. Aubrey clears her throat before whispering, "Basil". Hero shifts awkwardly, he stares for a minute before declaring, "Oh how could I forget something so important? We need to go find Basil now." He was about to rush out the room but Jawsum shouted, "Hero, there's still work to be done. You haven't ushered in the VIP for the fundraiser yet. You signed a contract." Hero argued that it was just a mesly piece of paper. "A MESLY PIECE OF PAPER?!?", Jawsum snapped his fingers to call in his security guards, "the penalty for breaking a contract is DEATH."`,
 		choices: [
-			['Beat them up','beat'],
-			['Break the intercom','intercom']
+			['Beat them up', 'beat'],
+			['Break the intercom', 'intercom']
 		],
 	},
 
 	beat: {
 		text: `<h2>Beat</h2>You with ease take out the two Gator guys that called, Jawsum speaks on the intercom and 4 more Gator guys show up. They outnumber you and they beat you up until you can't feel anything, the last thing you see is their teeth.`,
-		choices: [],
+		choices: [], //ending
 	},
 
 	intercom: {
 		text: `<h2>Intercom</h2>You destory the intercom by kicking it in, Jawsum slams his fist against the desk. His bodyguards are defeated, he signs and asks, "Is there really I can do to get you to stay? OH! What about a job? You, there!", he's peering at you. "How about you work for me? HUH??"`,
 		choices: [
-			['Accept','accept'],
-			['Deny','deny'],
+			['Accept', 'accept'],
+			['Deny', 'deny'],
 		],
 	},
 
 	accept: {
 		text: `<h2>Accept</h2>"Good! Sign here.", he hands you a contract. You sign and he puts the contract into the drawer. Your friends peered at one another, but they shrugged. "I'm sure Sunny knows what he's doing", Aubrey said. Everyone goes back to their jobs. You can't speak, or do much of anything. You're stuck as a bed rater.`,
-		choices: [],
+		choices: [],//ending
 	},
 
 	deny: {
 		text: `<h2>Deny</h2>"I REALLY can't convince you to stay huh?", Jawsum eats the contracts and turns around, "Go you crazy kids." You leave for home, you play on the playground now that some of your friends are back. Kel suggests a game of hide and seek, you're happy but you feel like someone's missing. Oh well.`,
-		choices: ['',''],
+		choices: [],//ending 
 	},
 
 	//laptop
@@ -153,7 +153,6 @@ const myStory = { //story object
 	frontDoor: {
 		text: `<h2>Front door</h2> You end up in white Space again, and decide whatever it was wasn't important.`,
 		choices: []//ending
-
 	},
 
 	rightDoor: {
@@ -182,9 +181,9 @@ const myStory = { //story object
 	},
 
 	forceThrough: {
-		text:`<h2>Force through</h2> You try to foce your way through the web, yet it is way too thick  to be walked through. You're going need something else to cut it.`,
-		choices:[
-			['Look for something the boxes','boxes']
+		text: `<h2>Force through</h2> You try to foce your way through the web, yet it is way too thick  to be walked through. You're going need something else to cut it.`,
+		choices: [
+			['Look for something the boxes', 'boxes']
 		],
 	},
 
@@ -211,12 +210,12 @@ const myStory = { //story object
 
 	Hangman1: {
 		text: `<h2>Hangman</h2> You write hangman on the screen, you fail. I don't know what you were expecting.`,
-		choices: [],  //need to add text
+		choices: [],  //ending
 	},
 
-	Hellworld:{
+	Hellworld: {
 		text: `<h2>Hell world</h2> You type in hell world, and your surroundings change. You're transported into another world. A girl with long black hair is at the piano, playing a song you never heard before. She presses the keys d d d a G g f d f, and then turns around. Her head's bleeding, she smiles anyway. She says "hello little brother." The end.`,
-		choices: [],  //need to add text
+		choices: [],  //ending
 	},
 
 
@@ -248,66 +247,66 @@ const myStory = { //story object
 	keyTolaptop: {
 		text: `<h2>Key to laptop</h2> You use the key on the laptop keyboard, everything in the room starts to stutter. A set of glowing red footprints appear on the floor, the path that continues past your vision. A couple of hands that find themselves on the outskirts of white space try to stop you. Following it leads you to a tear. The color of black space seeping into the all white surrounding. Stepping through the tear, you look around and see more footprints, you decide to follow the footprints. The forest wwas covered in webbing, and became thicker the more you traveled towards the church. In the middle of the path was a black figure with 4 legs and a single eye on its head. It kicked and thrashed around, almost hitting you. "Sunny..." it seemed to say, the voice evidently echoing through the trees.`,
 		choices: [
-			['Respond to the figure','respond'],
-			['Try to look away','lookaway'],
-		],  
+			['Respond to the figure', 'respond'],
+			['Try to look away', 'lookaway'],
+		],
 	},
 
 	respond: {
 		text: `<h2>Respond</h2>You open your mouth as if to ask for help on a way out of here. It opens its single looking directly at you, "You should not have left, Sunny"- Its body wobbly moves and hides on the darkest corners of the greenery, you are unable to catch its direct location. Seemingly, disappearing from your view. As you try to leave the area, its shadowy tendrils wrap against your feet pulling you to the floor, you start to sink beneath- "I pity all the suffering you endured, so please, let me help you forget." it echoed around you.`,
 		choices: [
-			['Struggle','struggle1'],
-			['Give in','giveIn'],
+			['Struggle', 'struggle1'],
+			['Give in', 'giveIn'],
 		]
 	},
 
 	lookaway: {
 		text: `<h2>Look away</h2>You look away, and the area seems to change. You don't know where you are, there's nothing here and there's no way out. What happened?`,
-		choices: [],
+		choices: [],//ending
 	},
 
 	struggle1: {
 		text: `<h2>Struggle</h2>You hold onto the floor, barely managing to resist. A long jump rope hanging from a tree extends your way as you start to sink deeper, you kick the tendrils in the hopes it would let go. The tendrils recoil in response, losing their grasp. You try getting back on your feet and face the deer - “Why do you want to open these wounds? Haven't you wept enough?”- The deer falls into your shadow, you feel a cold sweat. From the shadow a black and white boy emerges, Omori; you somehow already know. He pulls out his knife and attempts to take a stab at you.`,
 		choices: [
-			['Accept him','Accept'],
-			['fight','fight1'],
+			['Accept him', 'Accept'],
+			['fight', 'fight1'],
 		]
 	},
-	
+
 	Accept: {
 		text: `<h2>Accept</h2>The black dots on Omori's eyes reflect yours and you take notice how his distant blank stare felt familiar, you come to realize Omori is a part of you. You get closer to him and whilst he prepares to lunge you hug him; Omori's surprised, evaporating slowly before there's only you with your arm reaching out, hugging yourself. 
 		You wake up to your room. You hear the sound of keys jingling in the living room, you rush to see what was happening. You see your mother getting the last boxes to move, unable to shake the rush of emotion, you embrace her, she asks what's wrong. You begin to recount the events of Mari's death…
 		`,
-		choices: [],
+		choices: [], //ending
 
 	},
-	
+
 	giveIn: {
 		text: `<h2>Give in</h2>You allow the tendrils to pull you deeper to the floor till only your head is exposed, feeling nothing from your body below anymore. The deer lies next to you cradling your head and singing a whimsy lullaby; your eyelids feel heavy and you close your eyes. Welcome back to white space.`,
-		choices: [],
+		choices: [], //ending
 	},
 
 	fight1: {
 		text: `<h2>Fight</h2>You try to fight Omori, dealing a couple of hits as he does the same to you. You use your skills to heal yourself and he does too. The struggle goes on forever...`,
-		chocies: [],
+		chocies: [], //ending
 	},
-	
-	talk:{
+
+	talk: {
 		text: `<h2>Talk</h2> You ask the cat why it's here. They pull out a laptop and show you something that looks to be a boy in a white room. It explains that they're trying to develop an Indie game, that they'll be the first wo- cat to ever create one. The cat turns the laptop screen around, they're typing furiously. Wow they must be working hard. However a voice comes out of the computer screen. "On first blush, we might assume-". They're just watching videos, you sit down beside them and watch. You'll just have to continue your journey some other day.`,
 		choices: [],  //ending
 	},
 
-	ignore:{
+	ignore: {
 		text: `<h2>Ignore</h2> It might be tempting to pet the cat, his weirdly empty eyes stare at you but you're not in the mood. The cat starts talking, he says "Don't drink Orange Joe" and you wonder if it actually means anything."`,
 		choices: [],  //ending
 	},
 
 
-	
-	
-	
-	
-	
+
+
+
+
+
 
 
 }
