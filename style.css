@@ -28,6 +28,7 @@ ol, .story, .sticky {
 
 body {
 	background-color: #F0C4FF;
+	margin: 0;
 }
 
 .restart{
@@ -65,35 +66,40 @@ body {
 .box1 {
 	background-color: #94BFFF;
 	height: 112px;
-	max-width: 100%;
+	width: 100%;
 }
 
 .box2 {
 	background-color: #64A2FF;
 	height: 112px;
-	max-width: 100%;
+	width: 100%;
 }
 
 .box3 {
 	background-color: #A2EE95;
 	height: 112px;
-	max-width: 100%;
+	width: 100%;
 }
 
 .box4 {
 	background-color: #5CED44;
 	height: 112px;
-	max-width: 100%;
+	width: 100%;
 }
 
 .box5 {
 	background-color: #FAB2B2;
 	height: 112px;
-	max-width: 100%;
+	width: 100%;
 }
 
 .box6 {
 	background-color: #F86E6E;
 	height: 112px;
-	max-width: 100%;
+	width: 100%;
+}
+
+img {
+	width: 30%;
+	height: 30%;
 }
