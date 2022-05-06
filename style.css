@@ -37,11 +37,18 @@ body {
 	
 }
 
+.story {
+	padding: 0.75rem 0 0.75rem 0.75rem;
+}
+
+.breadcrumbs {
+	padding: 0.75rem 0 0.75rem 0;
+}
+
 .wrapper {
 	display: flex; 
 	justify-content: space-between;
 	max-width: 1024px;
-	padding: 0.75rem;
 	margin: 0 auto;
 }
 
@@ -53,11 +60,12 @@ body {
 
 }
 
+
 .wrap {
 	display: flex;
 	flex-direction: row; 
 	flex-wrap: wrap;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	width: 100%;
 	flex-wrap: nowrap;
@@ -100,6 +108,6 @@ body {
 }
 
 img {
-	width: 30%;
-	height: 30%;
+	width: 20%;
+	height: 20%;
 }
