@@ -26,6 +26,11 @@ ol, .story, .sticky {
 	margin-top: 95.78px;
 }
 
+html, body {
+	height: 100%; 
+	margin: 0;
+}
+
 body {
 	background-color: #F0C4FF;
 	margin: 0;
@@ -50,6 +55,7 @@ body {
 	justify-content: space-between;
 	max-width: 1024px;
 	margin: 0 auto;
+	min-height: 90%;
 }
 
 
@@ -64,11 +70,11 @@ body {
 .wrap {
 	display: flex;
 	flex-direction: row; 
-	flex-wrap: wrap;
 	margin-top: auto;
 	bottom: 0;
 	width: 100%;
 	flex-wrap: nowrap;
+	height: 112px;
 }
 
 .box1 {
