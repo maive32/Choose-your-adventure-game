@@ -65,7 +65,7 @@ body {
 	display: flex;
 	flex-direction: row; 
 	flex-wrap: wrap;
-	position: fixed;
+	margin-top: auto;
 	bottom: 0;
 	width: 100%;
 	flex-wrap: nowrap;
@@ -107,7 +107,7 @@ body {
 	width: 100%;
 }
 
-img {
+.Blackbulb {
 	width: 20%;
 	height: 20%;
 }
